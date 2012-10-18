@@ -23,4 +23,4 @@
 <br />
 
 <%= link_to 'New User', new_user_path %>
-<%= link_to 'Google', 'https://www.google.com' %>
+<%= link_to 'Google', 'www.google.com' %>
