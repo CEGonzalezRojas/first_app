@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>U-Task</title>
-		<style type="text/css">
+<head>
+  <title>U-Task</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <style type="text/css">
 			body
 			{
 				background: -moz-radial-gradient(rgb(5,256,30), rgb(0,22,0));
@@ -30,18 +33,11 @@
 				position: relative;
 				margin-top: 10%;
 			}
-		</style>
-	</head>
-	<body>
-		<div id="center">
-			<img src="logo.png"></img>
-		</div>
-		<h3>TRABAJANDO</h3>
-		<h5>Desarrollado por:
-			<a href="https://twitter.com/matiasarayac" target="_blank">Matias Araya</a> - 
-			<a href="https://twitter.com/cegonzalezrojas" target="_blank">Claudio Gonz&#225lez</a> - 
-			<a href="https://twitter.com/marco_huaiquin" target="_blank">Marco Huaiquin</a>  - 
-			<a href="https://twitter.com/cantoniopm" target="_blank">C&eacutesar Parra</a>
- 		</h5>
-	</body>
-<html>
+  </style>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
